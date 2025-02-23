@@ -35,17 +35,20 @@
                 border-radius: 10px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
-            h1, h3 {
+            h1 {
+                margin: 10px 0 10px 0;
+            }
+            h3 {
                 color: #0288D1;
                 margin: 10px 0 10px 0;
             }
-            .info-section {
+            .info__section {
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
                 gap: 20px;
             }
-            .info-box {
+            .info__box {
                 width: 48%;
             }
             a {
@@ -71,7 +74,7 @@
                 margin-bottom: 10px;
             }
             @media (max-width: 600px) {
-                .info-box {
+                .info__box {
                     width: 100%;
                 }
             }
@@ -81,13 +84,13 @@
     <body>
         <div class="container">
             <!-- Name -->
-            <h1>Hà Minh Trí</h1>
-            <h3>Intern Frontend Developer</h3>
+            <h1 style="text-align: center">Hà Minh Trí</h1>
+            <h3 style="text-align: center">Intern Frontend Developer</h3>
             <hr>
 
             <!-- Personal Information & Contact -->
-            <div class="info-section">
-                <div class="info-box">
+            <div class="info__section">
+                <div class="info__box">
                     <h3>Personal Information</h3>
                     <ul>
                         <li>Nguyen Kim, Ward 6, District 10</li>
@@ -95,7 +98,7 @@
                     </ul>
                 </div>
 
-                <div class="info-box">
+                <div class="info__box">
                     <h3>Contact Me</h3>
                     <ul>
                         <li><strong>Phone:</strong> (+084) 909 773 173</li>
@@ -124,7 +127,11 @@
             <!-- Education -->
             <hr>
             <h3>Education</h3>
-            <strong style="color: blue;">International University, Vietnam National University, HCMC</strong>
+            <strong style="color: blue;">
+                <a href="https://hcmiu.edu.vn/en/" target="_blank" rel="noopener noreferrer">
+                    International University, Vietnam National University, HCMC
+                </a>
+            </strong>
             <ul>
                 <li>September 2022 to Present</li>
                 <li>GPA: 3.1/4.0</li>
